@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="Account" syncable="YES" codeGenerationType="class"/>
+    <entity name="Customer" representedClassName="Customer" parentEntity="Person" syncable="YES" codeGenerationType="class"/>
+    <entity name="Employee" representedClassName="Employee" parentEntity="Person" syncable="YES" codeGenerationType="class"/>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="100" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Purchse" representedClassName="Purchse" syncable="YES" codeGenerationType="class">
+        <relationship name="acoount" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Account" syncable="YES"/>
+    </entity>
+    <entity name="Subscription" representedClassName="Subscription" syncable="YES" codeGenerationType="class">
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Account" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="-928.0625" positionY="-336.875" width="128" height="43"/>
+        <element name="Customer" positionX="-686.21484375" positionY="41.4765625" width="128" height="45"/>
+        <element name="Employee" positionX="-685.77734375" positionY="97.78515625" width="128" height="45"/>
+        <element name="Person" positionX="-855.46875" positionY="48.55078125" width="128" height="75"/>
+        <element name="Purchse" positionX="-686.40625" positionY="-406.703125" width="128" height="58"/>
+        <element name="Subscription" positionX="-686.546875" positionY="-293.9765625" width="128" height="58"/>
+        <element name="User" positionX="-1182.703125" positionY="-367.46875" width="128" height="75"/>
+    </elements>
+</model>
