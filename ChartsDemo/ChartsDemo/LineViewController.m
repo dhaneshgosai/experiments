@@ -232,7 +232,7 @@
     
     //Lets Select Pin Data with Last Point selection on Line Chart
     ChartDataEntry *lastEntry = [values1 lastObject];
-    [self.lineChart highlightValueWithX:lastEntry.x y:lastEntry.y dataSetIndex:0 callDelegate:YES];
+    [self.lineChart highlightValueWithX:lastEntry.x y:lastEntry.y dataSetIndex:0 dataIndex:0 callDelegate:YES];
     
 }
 

@@ -113,22 +113,22 @@
 		FF031922212ABFCF008783D2 /* ChartsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FF031927212ABFCF008783D2 /* Charts */,
+				FF03193C212ABFCF008783D2 /* LineViewController.h */,
+				FF031925212ABFCF008783D2 /* LineViewController.m */,
+				FF03193F212ABFCF008783D2 /* BarChartViewController.swift */,
+				FF031941212ABFCF008783D2 /* HoriBarChartViewController.swift */,
+				FF03193D212ABFCF008783D2 /* DonutChartViewController.swift */,
+				FF03193A212ABFCF008783D2 /* GroupBarChartViewController.swift */,
+				FF031935212ABFCF008783D2 /* CombineChartViewController.swift */,
 				FF031923212ABFCF008783D2 /* ViewController.swift */,
 				FF031924212ABFCF008783D2 /* LineChartViewController.swift */,
-				FF031925212ABFCF008783D2 /* LineViewController.m */,
 				FF031926212ABFCF008783D2 /* Assets.xcassets */,
-				FF031927212ABFCF008783D2 /* Charts */,
-				FF031935212ABFCF008783D2 /* CombineChartViewController.swift */,
 				FF031936212ABFCF008783D2 /* LaunchScreen.storyboard */,
 				FF031938212ABFCF008783D2 /* Main.storyboard */,
-				FF03193A212ABFCF008783D2 /* GroupBarChartViewController.swift */,
 				FF03193B212ABFCF008783D2 /* ChartsDemo-Bridging-Header.h */,
-				FF03193C212ABFCF008783D2 /* LineViewController.h */,
-				FF03193D212ABFCF008783D2 /* DonutChartViewController.swift */,
 				FF03193E212ABFCF008783D2 /* AppDelegate.swift */,
-				FF03193F212ABFCF008783D2 /* BarChartViewController.swift */,
 				FF031940212ABFCF008783D2 /* Info.plist */,
-				FF031941212ABFCF008783D2 /* HoriBarChartViewController.swift */,
 			);
 			path = ChartsDemo;
 			sourceTree = "<group>";

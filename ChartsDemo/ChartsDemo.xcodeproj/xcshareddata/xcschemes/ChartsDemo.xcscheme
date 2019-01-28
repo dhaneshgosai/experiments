@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "20AB13EA1ED2E8F200D4BC47"
-               BuildableName = "TestSwift.app"
-               BlueprintName = "TestSwift"
-               ReferencedContainer = "container:TestSwift.xcodeproj">
+               BuildableName = "ChartsDemo.app"
+               BlueprintName = "ChartsDemo"
+               ReferencedContainer = "container:ChartsDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "20AB13EA1ED2E8F200D4BC47"
-            BuildableName = "TestSwift.app"
-            BlueprintName = "TestSwift"
-            ReferencedContainer = "container:TestSwift.xcodeproj">
+            BuildableName = "ChartsDemo.app"
+            BlueprintName = "ChartsDemo"
+            ReferencedContainer = "container:ChartsDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "20AB13EA1ED2E8F200D4BC47"
-            BuildableName = "TestSwift.app"
-            BlueprintName = "TestSwift"
-            ReferencedContainer = "container:TestSwift.xcodeproj">
+            BuildableName = "ChartsDemo.app"
+            BlueprintName = "ChartsDemo"
+            ReferencedContainer = "container:ChartsDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "20AB13EA1ED2E8F200D4BC47"
-            BuildableName = "TestSwift.app"
-            BlueprintName = "TestSwift"
-            ReferencedContainer = "container:TestSwift.xcodeproj">
+            BuildableName = "ChartsDemo.app"
+            BlueprintName = "ChartsDemo"
+            ReferencedContainer = "container:ChartsDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

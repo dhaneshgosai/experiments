@@ -1,10 +1,10 @@
 PODS:
-  - Charts (3.0.5):
-    - Charts/Core (= 3.0.5)
-  - Charts/Core (3.0.5)
-  - SDWebImage (4.3.0):
-    - SDWebImage/Core (= 4.3.0)
-  - SDWebImage/Core (4.3.0)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - SDWebImage (4.4.4):
+    - SDWebImage/Core (= 4.4.4)
+  - SDWebImage/Core (4.4.4)
 
 DEPENDENCIES:
   - Charts
@@ -16,8 +16,8 @@ SPEC REPOS:
     - SDWebImage
 
 SPEC CHECKSUMS:
-  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
-  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
 
 PODFILE CHECKSUM: c59f59cc726817e0595bdb753abf5e2703fa6ac7
 

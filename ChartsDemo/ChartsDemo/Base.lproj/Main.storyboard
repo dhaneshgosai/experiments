@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vgp-c6-OhB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vgp-c6-OhB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--All Charts-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="TestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -66,7 +66,7 @@
         <!--Bar Chart View Controller-->
         <scene sceneID="6qh-5E-Yew">
             <objects>
-                <viewController storyboardIdentifier="BarChartViewController" id="XH2-RK-uzu" customClass="BarChartViewController" customModule="TestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BarChartViewController" id="XH2-RK-uzu" customClass="BarChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OaD-Jx-UsK"/>
                         <viewControllerLayoutGuide type="bottom" id="YSm-O9-eSL"/>
@@ -99,7 +99,7 @@
         <!--Combine Chart View Controller-->
         <scene sceneID="yF3-z7-YAd">
             <objects>
-                <viewController storyboardIdentifier="CombineChartViewController" id="AHs-W6-zuM" customClass="CombineChartViewController" customModule="TestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CombineChartViewController" id="AHs-W6-zuM" customClass="CombineChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YLj-Vc-D3l"/>
                         <viewControllerLayoutGuide type="bottom" id="6ZC-06-Gmt"/>
@@ -132,7 +132,7 @@
         <!--Donut Chart View Controller-->
         <scene sceneID="r8r-HF-EYd">
             <objects>
-                <viewController storyboardIdentifier="DonutChartViewController" id="6Cc-lM-CCz" customClass="DonutChartViewController" customModule="TestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DonutChartViewController" id="6Cc-lM-CCz" customClass="DonutChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kCB-q3-bUE"/>
                         <viewControllerLayoutGuide type="bottom" id="yNb-fs-gef"/>
@@ -223,7 +223,7 @@
         <!--Line Chart View Controller-->
         <scene sceneID="veR-41-aAa">
             <objects>
-                <viewController storyboardIdentifier="LineChartViewController" id="4oN-ac-hs3" customClass="LineChartViewController" customModule="TestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LineChartViewController" id="4oN-ac-hs3" customClass="LineChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="05O-av-fHU"/>
                         <viewControllerLayoutGuide type="bottom" id="47u-uX-D6n"/>
@@ -302,7 +302,7 @@
         <!--Hori Bar Chart View Controller-->
         <scene sceneID="5qg-cH-XH7">
             <objects>
-                <viewController storyboardIdentifier="HoriBarChartViewController" id="fPM-DR-Fn7" customClass="HoriBarChartViewController" customModule="TestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HoriBarChartViewController" id="fPM-DR-Fn7" customClass="HoriBarChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mgk-Na-8Ep"/>
                         <viewControllerLayoutGuide type="bottom" id="RWq-ao-ZM0"/>
@@ -336,7 +336,7 @@
         <!--Group Bar Chart View Controller-->
         <scene sceneID="9lX-Im-0RK">
             <objects>
-                <viewController id="vAq-WD-fqh" customClass="GroupBarChartViewController" customModule="TestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vAq-WD-fqh" customClass="GroupBarChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b4K-9d-9UV"/>
                         <viewControllerLayoutGuide type="bottom" id="95g-5e-kWo"/>
@@ -344,8 +344,23 @@
                     <view key="view" contentMode="scaleToFill" id="oOe-Qr-ezj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1A-As-t5O" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q1A-As-t5O" firstAttribute="top" secondItem="b4K-9d-9UV" secondAttribute="bottom" id="5Ox-D0-BHk"/>
+                            <constraint firstItem="q1A-As-t5O" firstAttribute="leading" secondItem="oOe-Qr-ezj" secondAttribute="leading" id="CdQ-hf-OwB"/>
+                            <constraint firstItem="95g-5e-kWo" firstAttribute="top" secondItem="q1A-As-t5O" secondAttribute="bottom" id="Xis-cU-BJz"/>
+                            <constraint firstAttribute="trailing" secondItem="q1A-As-t5O" secondAttribute="trailing" id="reu-8j-bCs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackedBarChartView" destination="q1A-As-t5O" id="C6q-bY-k5a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fH5-Qw-HUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

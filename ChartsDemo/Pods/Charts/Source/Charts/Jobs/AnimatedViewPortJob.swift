@@ -18,9 +18,9 @@ import CoreGraphics
 
 open class AnimatedViewPortJob: ViewPortJob
 {
-    @objc internal var phase: CGFloat = 1.0
-    @objc internal var xOrigin: CGFloat = 0.0
-    @objc internal var yOrigin: CGFloat = 0.0
+    internal var phase: CGFloat = 1.0
+    internal var xOrigin: CGFloat = 0.0
+    internal var yOrigin: CGFloat = 0.0
     
     private var _startTime: TimeInterval = 0.0
     private var _displayLink: NSUIDisplayLink!
@@ -71,14 +71,14 @@ open class AnimatedViewPortJob: ViewPortJob
         updateAnimationPhase(_startTime)
         
         _displayLink = NSUIDisplayLink(target: self, selector: #selector(animationLoop))
-        _displayLink.add(to: .main, forMode: .commonModes)
+        _displayLink.add(to: .main, forMode: RunLoop.Mode.common)
     }
     
     @objc open func stop(finish: Bool)
     {
         guard _displayLink != nil else { return }
 
-        _displayLink.remove(from: .main, forMode: .commonModes)
+        _displayLink.remove(from: .main, forMode: RunLoop.Mode.common)
         _displayLink = nil
 
         if finish
@@ -118,12 +118,12 @@ open class AnimatedViewPortJob: ViewPortJob
         }
     }
     
-    @objc internal func animationUpdate()
+    internal func animationUpdate()
     {
        // Override this
     }
     
-    @objc internal func animationEnd()
+    internal func animationEnd()
     {
         // Override this
     }

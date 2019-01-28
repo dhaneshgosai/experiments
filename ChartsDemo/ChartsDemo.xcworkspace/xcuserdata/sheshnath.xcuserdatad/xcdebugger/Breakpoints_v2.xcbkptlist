@@ -17,38 +17,6 @@
             endingLineNumber = "104"
             landmarkName = "longPressDetected(gesture:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestSwift.BarChartViewController.longPressDetected(gesture: __ObjC.UILongPressGestureRecognizer) -&gt; ()"
-                  moduleName = "TestSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/DATA/Dhanesh/Projects/experiments/Charts/TestSwift/TestSwift/BarChartViewController.swift"
-                  timestampString = "554821295.730846"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "1572">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestSwift.BarChartViewController.longPressDetected(gesture: __ObjC.UILongPressGestureRecognizer) -&gt; ()"
-                  moduleName = "TestSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/DATA/Dhanesh/Projects/experiments/Charts/TestSwift/TestSwift/BarChartViewController.swift"
-                  timestampString = "554821295.7325979"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "2156">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

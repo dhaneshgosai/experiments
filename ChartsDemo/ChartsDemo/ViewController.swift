@@ -68,10 +68,10 @@ extension ViewController : UITableViewDataSource,UITableViewDelegate{
             self.performSegue(withIdentifier: "HoriBarChartSegue", sender: nil)
             break
         case 5:
-            self.performSegue(withIdentifier: "LineChartObjCSegeu", sender: nil)
+            self.performSegue(withIdentifier: "GroupBarChartSegeu", sender: nil)
             break
         case 6:
-            self.performSegue(withIdentifier: "GroupBarChartSegeu", sender: nil)
+            self.performSegue(withIdentifier: "LineChartObjCSegeu", sender: nil)
             break
          
             
