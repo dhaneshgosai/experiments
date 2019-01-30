@@ -280,8 +280,20 @@ extension LineChartView {
             chartDataSet.circleHoleColor = colors[i]
             chartDataSet.highlightColor = colors[i]
             chartDataSet.colors = [colors[i]]
+            
+            
+            if(i == 0){
+                let gradientColors = [UIColor.red.cgColor, UIColor.blue.cgColor, UIColor.green.cgColor] as CFArray // Colors of the gradient
+                let colorLocations:[CGFloat] = [1.0, 0.5, 0.0] // Positioning of the gradient
+                let gradient = CGGradient.init(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: gradientColors, locations: colorLocations) // Gradient Object
+                chartDataSet.fill = Fill.fillWithLinearGradient(gradient!, angle: 90.0) // Set the Gradient
+                chartDataSet.drawFilledEnabled = true // Draw the Gradient
+            }
+            
             //Add Data Set Into Sets array
             dataSetsArray.append(chartDataSet)
+            
+            
             
         }
         

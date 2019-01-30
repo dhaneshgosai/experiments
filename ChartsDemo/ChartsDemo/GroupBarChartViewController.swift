@@ -25,7 +25,7 @@ class GroupBarChartViewController: UIViewController {
         let months = ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"]
         let points = [20.0, 4.0, 3.0, 6.0, 12.0, 16.0, 4.0]
         let scans = [2.0, 4.0, 3.0, 6.0, 2.0, 4.0, 2.0]
-        stackedBarChartView.setBarChartData(xValues: months, yValues1: scans, yValues2: points)
+        stackedBarChartView.setGroupBarChartData(xValues: months, yValues1: scans, yValues2: points)
         stackedBarChartView.drawMarkers = true
         let marker:BalloonMarker = BalloonMarker(color: .red, font: UIFont(name: "Helvetica", size: 12)!, textColor: .white, insets: UIEdgeInsets(top: 7.0, left: 7.0, bottom: 7.0, right: 7.0))
         marker.minimumSize = CGSize(width:75.0, height:35.0)
@@ -52,21 +52,42 @@ class GroupBarChartViewController: UIViewController {
 
 extension BarChartView {
     
-    func setBarChartData(xValues: [String], yValues1: [Double], yValues2 : [Double]) {
+    func setGroupBarChartData(xValues: [String], yValues1: [Double], yValues2 : [Double]) {
         
         var dataEntries1: [BarChartDataEntry] = []
-        for i in 0..<yValues1.count {
-            let dataEntry1 = BarChartDataEntry(x: Double(i), yValues: [yValues1[i], yValues2[i]])
+        var dataEntries2: [BarChartDataEntry] = []
+        for i in 0..<xValues.count {
+            let dataEntry1 = BarChartDataEntry(x: Double(i), y:yValues1[i])
             dataEntries1.append(dataEntry1)
+            let dataEntry2 = BarChartDataEntry(x: Double(i), y:yValues2[i])
+            dataEntries2.append(dataEntry2)
+            
         }
         
         let chartDataSet1 = BarChartDataSet(values: dataEntries1, label: "Points")
-        chartDataSet1.barBorderColor = .red
-        chartDataSet1.stackLabels = ["Points", "Scans"]
         chartDataSet1.colors =  [UIColor.darkGray, UIColor.lightGray]
+        let chartDataSet2 = BarChartDataSet(values: dataEntries2, label: "Scans")
+        chartDataSet2.colors =  [UIColor.darkGray, UIColor.lightGray]
         
         
-        let chartData = BarChartData(dataSets: [chartDataSet1])
+        let chartData = BarChartData(dataSets: [chartDataSet1,chartDataSet2])
+        
+        let groupSpace = 0.3
+        let barSpace = 0.05
+        let barWidth = 0.3
+        // (0.3 + 0.05) * 2 + 0.3 = 1.00 -> interval per "group"
+        
+        let groupCount = xValues.count
+        let startYear = 0
+        
+        
+        chartData.barWidth = barWidth;
+        self.xAxis.axisMinimum = Double(startYear)
+        let gg = chartData.groupWidth(groupSpace: groupSpace, barSpace: barSpace)
+        print("Groupspace: \(gg)")
+        self.xAxis.axisMaximum = Double(startYear) + gg * Double(groupCount)
+        
+        chartData.groupBars(fromX: Double(startYear), groupSpace: groupSpace, barSpace: barSpace)
     
         
 //        let chartFormatter = BarChartFormatter(labels: xValues)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E62E0A12201DF7800E6241E /* StackedBarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62E0A02201DF7800E6241E /* StackedBarChartViewController.swift */; };
 		2CAF2E60F1AC0EB69332A536 /* Pods_ChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70C0E93C6564A5542079062 /* Pods_ChartsDemo.framework */; };
 		FF031942212ABFCF008783D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF031923212ABFCF008783D2 /* ViewController.swift */; };
 		FF031943212ABFCF008783D2 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF031924212ABFCF008783D2 /* LineChartViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E62E0A02201DF7800E6241E /* StackedBarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedBarChartViewController.swift; sourceTree = "<group>"; };
 		20AB13EB1ED2E8F200D4BC47 /* ChartsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1D3FF3BF214EA2E3A9AD44 /* Pods-ChartsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChartsDemo/Pods-ChartsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		50A7DFBC6ED2D1895245976F /* Pods-ChartsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChartsDemo/Pods-ChartsDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				FF031941212ABFCF008783D2 /* HoriBarChartViewController.swift */,
 				FF03193D212ABFCF008783D2 /* DonutChartViewController.swift */,
 				FF03193A212ABFCF008783D2 /* GroupBarChartViewController.swift */,
+				1E62E0A02201DF7800E6241E /* StackedBarChartViewController.swift */,
 				FF031935212ABFCF008783D2 /* CombineChartViewController.swift */,
 				FF031923212ABFCF008783D2 /* ViewController.swift */,
 				FF031924212ABFCF008783D2 /* LineChartViewController.swift */,
@@ -288,6 +291,7 @@
 				FF031948212ABFCF008783D2 /* DayAxisValueFormatter.m in Sources */,
 				FF031942212ABFCF008783D2 /* ViewController.swift in Sources */,
 				FF031943212ABFCF008783D2 /* LineChartViewController.swift in Sources */,
+				1E62E0A12201DF7800E6241E /* StackedBarChartViewController.swift in Sources */,
 				FF03194B212ABFCF008783D2 /* BalloonMarker.swift in Sources */,
 				FF031953212ABFCF008783D2 /* AppDelegate.swift in Sources */,
 				FF03194A212ABFCF008783D2 /* XYMarkerView.swift in Sources */,
