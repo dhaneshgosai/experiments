@@ -56,7 +56,8 @@
                         <segue destination="6Cc-lM-CCz" kind="show" identifier="DonutChartSegue" id="alh-vZ-zmG"/>
                         <segue destination="fPM-DR-Fn7" kind="show" identifier="HoriBarChartSegue" id="DpR-56-oA2"/>
                         <segue destination="BR0-WO-6U9" kind="show" identifier="LineChartObjCSegeu" id="qLw-09-gYB"/>
-                        <segue destination="vAq-WD-fqh" kind="show" identifier="GroupBarChartSegeu" id="i9V-NQ-uxj"/>
+                        <segue destination="vAq-WD-fqh" kind="show" identifier="StackedBarChartSegeu" id="i9V-NQ-uxj"/>
+                        <segue destination="1cn-py-NYF" kind="show" identifier="GroupBarChartSegeu" id="ne8-MN-Xhe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -333,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="1018" y="1827"/>
         </scene>
-        <!--Group Bar Chart View Controller-->
+        <!--Stacked Bar Chart View Controller-->
         <scene sceneID="9lX-Im-0RK">
             <objects>
-                <viewController id="vAq-WD-fqh" customClass="GroupBarChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vAq-WD-fqh" customClass="StackedBarChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b4K-9d-9UV"/>
                         <viewControllerLayoutGuide type="bottom" id="95g-5e-kWo"/>
@@ -366,11 +367,44 @@
             </objects>
             <point key="canvasLocation" x="1751" y="1827"/>
         </scene>
+        <!--Group Bar Chart View Controller-->
+        <scene sceneID="VDO-k8-wgv">
+            <objects>
+                <viewController id="1cn-py-NYF" customClass="GroupBarChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j7k-3O-fdo"/>
+                        <viewControllerLayoutGuide type="bottom" id="bJM-nV-Lr9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iMQ-h6-w9I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzq-bd-PcA" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dzq-bd-PcA" secondAttribute="trailing" id="ROz-UH-XIp"/>
+                            <constraint firstItem="dzq-bd-PcA" firstAttribute="top" secondItem="j7k-3O-fdo" secondAttribute="bottom" id="ZYt-3m-7X2"/>
+                            <constraint firstItem="dzq-bd-PcA" firstAttribute="leading" secondItem="iMQ-h6-w9I" secondAttribute="leading" id="dHE-dM-sSt"/>
+                            <constraint firstItem="bJM-nV-Lr9" firstAttribute="top" secondItem="dzq-bd-PcA" secondAttribute="bottom" id="lL3-fh-Jai"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="groupBarChartView" destination="dzq-bd-PcA" id="wgo-fn-1Vg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2EV-V5-tes" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407" y="1827"/>
+        </scene>
     </scenes>
     <resources>
         <image name="youtube-logo.png" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ofN-Dk-j5Y"/>
+        <segue reference="qLw-09-gYB"/>
     </inferredMetricsTieBreakers>
 </document>

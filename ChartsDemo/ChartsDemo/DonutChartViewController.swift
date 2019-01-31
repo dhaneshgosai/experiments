@@ -16,6 +16,8 @@ class DonutChartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Pie Chart"
+        
         mobileTech = ["iOS", "Android", "AngularJS", "Xamarin", "Others"]
         let techPer = [30.0, 40.0, 18.0, 8.0, 4.0]
         
