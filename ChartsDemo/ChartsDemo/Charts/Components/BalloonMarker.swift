@@ -20,14 +20,14 @@ import Charts
     open var font: UIFont?
     open var textColor: UIColor?
     open var insets = UIEdgeInsets()
-    open var minimumSize = CGSize()
+    @objc open var minimumSize = CGSize()
     
     fileprivate var labelns: NSString?
     fileprivate var _labelSize: CGSize = CGSize()
     fileprivate var _paragraphStyle: NSMutableParagraphStyle?
     fileprivate var _drawAttributes = [NSAttributedStringKey : Any] ()
     
-    public init(color: UIColor, font: UIFont, textColor: UIColor, insets: UIEdgeInsets)
+    @objc public init(color: UIColor, font: UIFont, textColor: UIColor, insets: UIEdgeInsets)
     {
         super.init()
         

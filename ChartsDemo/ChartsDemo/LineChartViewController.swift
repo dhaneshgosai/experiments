@@ -61,6 +61,10 @@ class LineChartViewController: UIViewController {
         lineChartView.leftAxis.labelPosition = .insideChart
         lineChartView.rightAxis.labelPosition = .insideChart
         
+        let marker:BalloonMarker = BalloonMarker(color: .red, font: UIFont(name: "Helvetica", size: 12)!, textColor: .white, insets: UIEdgeInsets(top: 7.0, left: 7.0, bottom: 7.0, right: 7.0))
+        marker.minimumSize = CGSize(width:75.0, height:35.0)
+        lineChartView.marker = marker
+        
         
         
 //        lineChartView.setViewPortOffsets(left: 10, top: 10, right: 10, bottom: 10)
@@ -149,15 +153,6 @@ class LineChartViewController: UIViewController {
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
 
 extension LineChartView {
@@ -276,6 +271,11 @@ extension LineChartView {
             chartDataSet.circleHoleColor = colors[i]
             chartDataSet.highlightColor = colors[i]
             chartDataSet.colors = [colors[i]]
+            
+            chartDataSet.setDrawHighlightIndicators(true)
+            
+            chartDataSet.highlightColor = .green
+            chartDataSet.highlightLineWidth = 5
             
             //Set Gradient Fill Color
             let gradientColors = [UIColor.red.cgColor, UIColor.blue.cgColor, UIColor.green.cgColor] as CFArray // Colors of the gradient

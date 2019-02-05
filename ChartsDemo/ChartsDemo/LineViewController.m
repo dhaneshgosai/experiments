@@ -84,16 +84,9 @@
 //    _barChartOrdersView.legend.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:11.f];
 //    _barChartOrdersView.legend.xEntrySpace = 4.0;
 //
-////    BalloonMarker *balloonMarker = [[BalloonMarker alloc]
-////                                    initWithColor: [UIColor colorWithWhite:180/255. alpha:0.9]
-////                                    font: [UIFont systemFontOfSize:10.0]
-////                                    textColor: UIColor.whiteColor
-////                                    insets: UIEdgeInsetsMake(8.0, 8.0, 20.0, 8.0)];
-////    balloonMarker.chartView = _barChartOrdersView;
-////    balloonMarker.minimumSize = CGSizeMake(40.f, 20.f);
-//
-//
-//    // Do any additional setup after loading the view.
+    
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -145,6 +138,14 @@
     xAxis.valueFormatter = self;
 //    xAxis.drawGridLinesEnabled = NO;
 //    xAxis.yOffset = 5;
+    
+    BalloonMarker *balloonMarker = [[BalloonMarker alloc]
+                                    initWithColor: [UIColor blueColor]
+                                    font: [UIFont systemFontOfSize:10.0]
+                                    textColor: UIColor.blackColor
+                                    insets: UIEdgeInsetsMake(8.0, 8.0, 20.0, 8.0)];
+    balloonMarker.chartView = self.lineChart;
+    balloonMarker.minimumSize = CGSizeMake(80.f, 30.f);
     
     
     //Set data set for chart.
