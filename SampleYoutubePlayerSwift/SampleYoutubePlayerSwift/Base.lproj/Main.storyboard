@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vZy-cY-i8b">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Youtube Player-->
+        <scene sceneID="aIG-t0-rJG">
+            <objects>
+                <viewController id="77v-ia-MMA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RAm-0F-itZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyH-iM-FIQ">
+                                <rect key="frame" x="116.5" y="114" width="142" height="30"/>
+                                <state key="normal" title="Swift Youtube Player"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="AOQ-0q-PpW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yco-uv-fqR">
+                                <rect key="frame" x="94" y="169" width="187" height="30"/>
+                                <state key="normal" title="Objective C Youtube Player"/>
+                                <connections>
+                                    <segue destination="soy-kr-f4R" kind="show" id="i8C-5W-qTA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yco-uv-fqR" firstAttribute="centerX" secondItem="RAm-0F-itZ" secondAttribute="centerX" id="FXJ-84-9ZN"/>
+                            <constraint firstItem="vyH-iM-FIQ" firstAttribute="centerX" secondItem="RAm-0F-itZ" secondAttribute="centerX" id="TaD-16-ZTH"/>
+                            <constraint firstItem="vyH-iM-FIQ" firstAttribute="top" secondItem="9Pe-cm-XSB" secondAttribute="top" constant="50" id="Vw5-Nq-01w"/>
+                            <constraint firstItem="Yco-uv-fqR" firstAttribute="top" secondItem="vyH-iM-FIQ" secondAttribute="bottom" constant="25" id="reY-n4-2re"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Pe-cm-XSB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Youtube Player" id="kdd-aG-5zh">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ac6-zb-HeX"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="icA-ry-5Ub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="51"/>
+        </scene>
+        <!--Swift Player-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleYoutubePlayerSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnO-yO-oAA" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="167" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gnO-yO-oAA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="2Uf-ZN-Pub"/>
+                            <constraint firstItem="gnO-yO-oAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PVl-jd-ywo"/>
+                            <constraint firstItem="gnO-yO-oAA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Wp9-mx-a6z"/>
+                            <constraint firstItem="gnO-yO-oAA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="no8-lL-a6R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swift Player" id="Gfj-qR-LWy"/>
+                    <connections>
+                        <outlet property="playerView" destination="gnO-yO-oAA" id="80q-Z4-zmy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="-200"/>
+        </scene>
+        <!--Obj C Player-->
+        <scene sceneID="HmL-vt-9kP">
+            <objects>
+                <viewController id="soy-kr-f4R" customClass="PlayerObjCViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ct-Qw-bqb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHB-IQ-Wr0" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="167" width="375" height="333.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CHB-IQ-Wr0" firstAttribute="height" secondItem="4Ct-Qw-bqb" secondAttribute="height" multiplier="0.5" id="S7r-9C-Z1U"/>
+                            <constraint firstItem="CHB-IQ-Wr0" firstAttribute="centerX" secondItem="4Ct-Qw-bqb" secondAttribute="centerX" id="eI5-d0-A7i"/>
+                            <constraint firstItem="CHB-IQ-Wr0" firstAttribute="width" secondItem="4Ct-Qw-bqb" secondAttribute="width" id="nOI-G1-w6r"/>
+                            <constraint firstItem="CHB-IQ-Wr0" firstAttribute="centerY" secondItem="4Ct-Qw-bqb" secondAttribute="centerY" id="vfz-sI-sc9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N91-6H-OCN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Obj C Player" id="zcN-KS-5QZ"/>
+                    <connections>
+                        <outlet property="playerView" destination="CHB-IQ-Wr0" id="gps-FQ-k7w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtt-gi-rWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="604"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="auh-5w-7yy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZy-cY-i8b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6a9-LS-a1a">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="77v-ia-MMA" kind="relationship" relationship="rootViewController" id="GRC-8e-NI1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTa-j6-UP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687.20000000000005" y="50.824587706146929"/>
+        </scene>
+    </scenes>
+</document>
