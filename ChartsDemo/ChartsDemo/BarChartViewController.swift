@@ -30,7 +30,7 @@ class BarChartViewController: UIViewController {
 
         barChartView.noDataText = "Data will load soon..."
         barChartView.xAxis.labelCount = months.count
-        setBarChartData(xValues: months, yValues: unitsSold, label: "Monthly Sales")
+        barChartView.setBarChartData(xValues: months, yValues: unitsSold, label: "Monthly Sales")
         barChartView.leftAxis.labelFont = UIFont.systemFont(ofSize: 8.0, weight: UIFont.Weight.regular)
         barChartView.leftAxis.labelTextColor = .orange
         self.setUpGraph()
@@ -208,7 +208,7 @@ extension BarChartView {
         xAxis.valueFormatter = chartFormatter
         self.xAxis.valueFormatter = xAxis.valueFormatter
         
-        chartData.barWidth = Double(0.1)
+//        chartData.barWidth = Double(1.0)
         
 //        //Setup for GroupBars
 //        let groupSpace = 0.12 as Double
