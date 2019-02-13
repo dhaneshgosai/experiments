@@ -17,8 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
 //    self.playerView.webView.allowsInlineMediaPlayback = YES;
     NSDictionary *playvarsDic = @{ @"fs" : @1, @"controls" : @1, @"playsinline" : @0, @"autohide" : @1, @"showinfo" : @1, @"autoplay": @1, @"modestbranding" : @1 };
     [self.playerView loadWithVideoId:@"PQmrmVs10X8" playerVars:playvarsDic];
